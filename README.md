@@ -54,5 +54,5 @@ This folder contains test cases for verifying the correctness of implementations
 ## Contact
 Feel free to reach out if you have any questions or suggestions:
 
-   ![Email](https://cdn-icons-png.flaticon.com/512/732/732200.png=20x20)   [suyashekhande@gmail.com](mailto:suyashekhande@gmail.com)  
- ![GitHub](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg=20x20) [SuyashEkhande](https://github.com/SuyashEkhande)
+[![Email](https://img.shields.io/badge/Email-suyashekhande@gmail.com-blue?style=flat-square)](mailto:suyashekhande@gmail.com)  
+[![GitHub](https://img.shields.io/badge/GitHub-SuyashEkhande-black?style=flat-square)](https://github.com/SuyashEkhande)
