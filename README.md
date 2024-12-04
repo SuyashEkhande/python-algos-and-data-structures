@@ -20,12 +20,12 @@ This folder contains basic Python concepts and fundamental programming technique
 This folder contains implementations of core data structures commonly used in algorithms.
 
 - Arrays
-- Linked Lists (Singly and Doubly)
+- Linked Lists
 - Stacks
 - Queues
-- Hash Tables (Dictionaries)
-- Trees (Binary Tree, Binary Search Tree)
-- Graphs (Adjacency List, Matrix)
+- Hash Tables
+- Trees
+- Graphs
 
 ### 3. **algorithms**
 This folder includes implementations of essential algorithms, including sorting and searching algorithms, and other important algorithms used in competitive programming.
