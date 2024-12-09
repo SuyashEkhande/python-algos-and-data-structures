@@ -89,6 +89,28 @@ for num in countdown(5):
     print(num, end=" ")
 print()
 
+# Documenting Functions
+
+def calculate_sum(radius: float) -> float:
+    """
+    Calculate the area of circle.
+
+    Parameters:
+    radius (float): The radius of the circle. Non-negative.
+
+    Returns:
+    float: The area of the circle calculated using the formula pi * r ** 2
+
+    Raises:
+    ValueError: If the radius is negative.
+    """
+    if radius < 0:
+        raise ValueError("Radius cannot be negative!")
+    import math # we can also import modules locallly
+    return math.pi * math.pow(radius, 2)
+
+
+
 
 
 
