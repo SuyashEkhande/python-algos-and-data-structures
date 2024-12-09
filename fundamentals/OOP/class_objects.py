@@ -13,6 +13,10 @@ class News:
         self.body = body
         self.date = dt.date.today()
     
+    def display_category():
+        """Static Method to display news category"""
+        print(f"News Category: {News.news_category}")
+   
     def display_news(self):
         """Displays News information"""
         news_block = f"""
@@ -28,7 +32,7 @@ news2 = News("Starship!!","Elon Musk's startship launch was successful")
 
 
 # Calling object methods
-print(f"\n\tNews Category: {News.news_category}") # Accessing class variable
+print(f"\n\tNews Category: {News.display_category()}") # Accessing class variable
 news1.display_news()
 news2.display_news()
 
