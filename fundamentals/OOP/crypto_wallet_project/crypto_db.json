@@ -1,0 +1,44 @@
+{
+    "wallets": [
+        {
+            "wallet_id": "fd1856cd-291e-45c3-af29-c7e636b23fb9",
+            "user_id": "c5bf41cb-3f73-40d8-b0f9-7de40a3b20ae",
+            "coin_type": "Bitcoin",
+            "balance": 50
+        },
+        {
+            "wallet_id": "c805669b-2d7f-44be-beb3-064e662d9ab2",
+            "user_id": "919cd1fb-06d0-452f-a2d4-1d316eacf065",
+            "coin_type": "Bitcoin",
+            "balance": 150
+        }
+    ],
+    "transactions": [
+        {
+            "transaction_id": "66f8bca6-c42c-410a-964f-06d6ab0cbf20",
+            "wallet_id": "fd1856cd-291e-45c3-af29-c7e636b23fb9",
+            "amount": 50,
+            "transaction_type": "Withdrawal",
+            "date": "2024-12-10 21:37:49"
+        },
+        {
+            "transaction_id": "dd5fa342-c49f-4132-9585-c4b390ff4f59",
+            "wallet_id": "c805669b-2d7f-44be-beb3-064e662d9ab2",
+            "amount": 50,
+            "transaction_type": "Deposit",
+            "date": "2024-12-10 21:37:49"
+        }
+    ],
+    "users": [
+        {
+            "user_id": "c5bf41cb-3f73-40d8-b0f9-7de40a3b20ae",
+            "username": "Alice",
+            "email": "alice@example.com"
+        },
+        {
+            "user_id": "919cd1fb-06d0-452f-a2d4-1d316eacf065",
+            "username": "Bob",
+            "email": "bob@example.com"
+        }
+    ]
+}
