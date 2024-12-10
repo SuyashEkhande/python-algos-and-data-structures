@@ -1,4 +1,3 @@
-
 # Python Data Structures and Algorithms
 
 This repository contains Python implementations of various data structures, algorithms, and solutions to popular coding problems. The goal is to practice and understand key concepts of Python, Data Structures, and Algorithms, along with solutions to common problems on platforms like LeetCode and Codeforces.
@@ -7,27 +6,7 @@ This repository contains Python implementations of various data structures, algo
 
 The repo is organized into the following folders:
 
-### 1. **python_basics**
-This folder contains basic Python concepts and fundamental programming techniques to build a strong foundation in Python programming.
-
-- Variables, Data types
-- Control Flow (if, loops)
-- Functions and Modules
-- File handling
-- Object-Oriented Programming (OOP) Concepts
-
-### 2. **data_structures**
-This folder contains implementations of core data structures commonly used in algorithms.
-
-- Arrays
-- Linked Lists
-- Stacks
-- Queues
-- Hash Tables
-- Trees
-- Graphs
-
-### 3. **algorithms**
+### 1. **algorithms**
 This folder includes implementations of essential algorithms, including sorting and searching algorithms, and other important algorithms used in competitive programming.
 
 - Sorting (Quick Sort, Merge Sort, etc.)
@@ -38,18 +17,48 @@ This folder includes implementations of essential algorithms, including sorting 
 - Backtracking
 - Graph Algorithms (BFS, DFS)
 
-### 4. **problems_solutions**
+### 2. **concurrency_parallelism**
+This folder contains implementations and examples of concurrency and parallelism concepts in Python.
+
+- Threading
+- Multiprocessing
+- Asynchronous Programming (asyncio)
+
+### 3. **dsa**
+This folder includes implementations of core data structures and algorithms for DSA practice.
+
+- Arrays
+- Linked Lists
+- Stacks
+- Queues
+- Hash Tables
+- Trees
+- Graphs
+
+### 4. **fundamentals**
+This folder contains basic Python concepts and fundamental programming techniques to build a strong foundation in Python programming.
+
+- Variables, Data types
+- Control Flow (if, loops)
+- Functions and Modules
+- File handling
+- Object-Oriented Programming (OOP) Concepts
+
+### 5. **object_oriented_programming**
+This folder focuses on object-oriented programming concepts and patterns.
+
+- Classes and Objects
+- Inheritance
+- Polymorphism
+- Encapsulation
+- Design Patterns (Singleton, Factory, etc.)
+
+### 6. **problems**
 This folder contains solutions to coding problems from platforms such as LeetCode, Codeforces, and HackerRank.
 
 - LeetCode
 - Codeforces
 - HackerRank
-
-### 5. **tests**
-This folder contains test cases for verifying the correctness of implementations.
-
-- Unit tests for individual data structures and algorithms.
-- Problem-specific tests for solutions.
 
 ## Contact
 Feel free to reach out if you have any questions or suggestions:
