@@ -16,20 +16,38 @@ that need maximum computational power.
 import multiprocessing
 import time
 import psutil
-import os
+import sys
+
+sys.set_int_max_str_digits(10_000)
 
 # A CPU-bound task (factorial)
-def cpu_bound_task(n):
-    print(f"Calculating factorial of {n}")
-    result = 1
-    for i in range(i, n+1):
-        result *= i
-    time.sleep(1) #Simulating computational delay
+def find_primes(n):
+    print(f"Finding primes up to {n}")
+    primes = []
+    for num in range(2, n):
+        for i in range(2, int(num ** 0.5) + 1):
+            if num % i == 0:
+                break
+        else:
+            primes.append(num)
+    print(f"Found {len(primes)} primes up to {n}")
+
 
 # Helper Function to monitor CPU usage
-def monitor_cpu_usage():
-    print(f"CPU usage: {psutil.cpu_percent(interval=1)}%")
-    print(f"CPU Affinity: {psutil.cpu_affinity()}")  # Shows which CPU cores are used
+def monitor_processes(processes):
+    process_objects = [psutil.Process(p.pid) for p in processes]
+    while any(p.is_alive() for p in processes):
+        print("\nProcess Monitoring:")
+        for proc, p in zip(process_objects, processes):
+            if p.is_alive():
+                try:
+                    print(f"Process {proc.pid}:")
+                    print(f"  - CPU Usage: {proc.cpu_percent(interval=0.5)}%")
+                    print(f"  - Assigned CPU Cores: {proc.cpu_affinity()}")
+                except psutil.NoSuchProcess:
+                    print(f"Process {proc.pid} has completed.")
+        time.sleep(1)
+
 
 """
 This is the crucial part. When multiprocessing is used on Windows, 
@@ -39,25 +57,28 @@ leading to the error you're seeing.
 """
 # Wrap the code inside if __name__ == '__main__':
 if __name__ == '__main__':
+    # Create processes for heavier tasks
+    tasks = [
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,)),
+        multiprocessing.Process(target=find_primes, args=(500000,))
+    ]
 
-    # Creating multiple processes for CPU-bound tasks
-    process1 = multiprocessing.Process(target=cpu_bound_task, args=(10,))
-    process2 = multiprocessing.Process(target=cpu_bound_task, args=(20,))
+    # Start processes
+    for task in tasks:
+        task.start()
 
-    # Starting the processes
-    process1.start()
-    process2.start()
+    # Monitor CPU usage while tasks are running
+    monitor_processes(tasks)
 
-    # Monitor CPU usage during execution
-    for _ in range(3):
-        time.sleep(1)
-        monitor_cpu_usage()
+    # Wait for all processes to finish
+    for task in tasks:
+        task.join()
 
-    # Wait for both processes to complete
-    process1.join()
-    process2.join()
-
-    print("Both tasks completed")
-
-    monitor_cpu_usage()
-
+    print("All tasks completed")
