@@ -1,42 +1,42 @@
 {
     "wallets": [
         {
-            "wallet_id": "fd1856cd-291e-45c3-af29-c7e636b23fb9",
-            "user_id": "c5bf41cb-3f73-40d8-b0f9-7de40a3b20ae",
+            "wallet_id": "82d5cb36-d5b8-4f2a-8643-5cdf066179da",
+            "user_id": "1c763992-8516-49c9-8f05-d80ba33f3b94",
             "coin_type": "Bitcoin",
             "balance": 50
         },
         {
-            "wallet_id": "c805669b-2d7f-44be-beb3-064e662d9ab2",
-            "user_id": "919cd1fb-06d0-452f-a2d4-1d316eacf065",
+            "wallet_id": "ebfc74e4-363a-424e-8a48-c0f39c22d62f",
+            "user_id": "ab40029d-6c5b-4909-9f08-5dbe9bda8913",
             "coin_type": "Bitcoin",
             "balance": 150
         }
     ],
     "transactions": [
         {
-            "transaction_id": "66f8bca6-c42c-410a-964f-06d6ab0cbf20",
-            "wallet_id": "fd1856cd-291e-45c3-af29-c7e636b23fb9",
+            "transaction_id": "8aeb9229-ef75-4ed7-ba6f-1368212882a0",
+            "wallet_id": "82d5cb36-d5b8-4f2a-8643-5cdf066179da",
             "amount": 50,
             "transaction_type": "Withdrawal",
-            "date": "2024-12-10 21:37:49"
+            "date": "2024-12-11 11:49:49"
         },
         {
-            "transaction_id": "dd5fa342-c49f-4132-9585-c4b390ff4f59",
-            "wallet_id": "c805669b-2d7f-44be-beb3-064e662d9ab2",
+            "transaction_id": "98ee7e85-7327-4395-9899-c7485dbe0c36",
+            "wallet_id": "ebfc74e4-363a-424e-8a48-c0f39c22d62f",
             "amount": 50,
             "transaction_type": "Deposit",
-            "date": "2024-12-10 21:37:49"
+            "date": "2024-12-11 11:49:49"
         }
     ],
     "users": [
         {
-            "user_id": "c5bf41cb-3f73-40d8-b0f9-7de40a3b20ae",
+            "user_id": "1c763992-8516-49c9-8f05-d80ba33f3b94",
             "username": "Alice",
             "email": "alice@example.com"
         },
         {
-            "user_id": "919cd1fb-06d0-452f-a2d4-1d316eacf065",
+            "user_id": "ab40029d-6c5b-4909-9f08-5dbe9bda8913",
             "username": "Bob",
             "email": "bob@example.com"
         }
