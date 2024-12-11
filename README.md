@@ -1,13 +1,31 @@
 # Python Data Structures and Algorithms
 
-This repository contains Python implementations of various data structures, algorithms, and solutions to popular coding problems. The goal is to practice and understand key concepts of Python, Data Structures, and Algorithms, along with solutions to common problems on platforms like LeetCode and Codeforces.
+This repository provides Python implementations of various data structures, algorithms, design patterns, and solutions to popular coding problems. It aims to build a strong foundation in Python programming, improve problem-solving skills, and explore optimization techniques for real-world and competitive programming challenges on platforms like LeetCode, Codeforces, and HackerRank.
 
 ## Repository Structure
 
-The repo is organized into the following folders:
+The repository is organized into the following folders:
 
-### 1. **algorithms**
-This folder includes implementations of essential algorithms, including sorting and searching algorithms, and other important algorithms used in competitive programming.
+### 1. **fundamentals**
+This folder contains basic Python concepts and fundamental programming techniques to build a strong foundation.
+
+- Built-in functions and modules
+- Closures, nested functions, and decorators
+- Context managers and file handling
+- Python data structures, comprehensions, and string operations
+- Functions, control flow, and operators
+- Module imports and custom modules
+
+### 2. **object_oriented_programming**
+This folder focuses on object-oriented programming concepts and patterns.
+
+- Classes, objects, and inheritance
+- Encapsulation and polymorphism
+- Static and class methods
+- Dunder (magic) methods
+
+### 3. **algorithms**
+This folder includes implementations of essential algorithms, covering:
 
 - Sorting (Quick Sort, Merge Sort, etc.)
 - Searching (Binary Search, Linear Search)
@@ -17,14 +35,7 @@ This folder includes implementations of essential algorithms, including sorting 
 - Backtracking
 - Graph Algorithms (BFS, DFS)
 
-### 2. **concurrency_parallelism**
-This folder contains implementations and examples of concurrency and parallelism concepts in Python.
-
-- Threading
-- Multiprocessing
-- Asynchronous Programming (asyncio)
-
-### 3. **dsa**
+### 4. **dsa**
 This folder includes implementations of core data structures and algorithms for DSA practice.
 
 - Arrays
@@ -35,30 +46,51 @@ This folder includes implementations of core data structures and algorithms for 
 - Trees
 - Graphs
 
-### 4. **fundamentals**
-This folder contains basic Python concepts and fundamental programming techniques to build a strong foundation in Python programming.
+### 5. **design_patterns**
+This folder organizes design patterns into three categories:
 
-- Variables, Data types
-- Control Flow (if, loops)
-- Functions and Modules
-- File handling
-- Object-Oriented Programming (OOP) Concepts
+#### Creational Patterns
+- Abstract Factory, Builder, Factory, Prototype, Singleton
 
-### 5. **object_oriented_programming**
-This folder focuses on object-oriented programming concepts and patterns.
+#### Structural Patterns
+- Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy
 
-- Classes and Objects
-- Inheritance
-- Polymorphism
-- Encapsulation
-- Design Patterns (Singleton, Factory, etc.)
+#### Behavioral Patterns
+- Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template, Visitor
 
-### 6. **problems**
+### 6. **concurrency_parallelism**
+This folder demonstrates concurrency and parallelism concepts in Python.
+
+- Asynchronous Programming (`asyncio`)
+- Threading (`py_threading.py`)
+- Multiprocessing (`multi_processing.py`)
+- Using `concurrent.futures` for thread and process pools
+- Green threads with `gevent`
+
+### 7. **memory_management**
+This folder explores memory management and optimization techniques in Python.
+
+- Garbage collection
+- Heap and stack memory differentiation
+- Memory usage optimization
+- Weak references
+
+### 8. **problems**
 This folder contains solutions to coding problems from platforms such as LeetCode, Codeforces, and HackerRank.
 
-- LeetCode
-- Codeforces
-- HackerRank
+### 9. **testing_debugging**
+This folder focuses on testing and debugging techniques in Python.
+
+#### Debugging
+- Examples using Python's `pdb` debugger
+
+#### Profiling and Optimization
+- Code profiling with `cProfile`
+- Optimization using `functools.lru_cache`
+- Benchmarking with `timeit`
+
+#### Unit Testing
+- Example unit tests for mathematical operations
 
 ## Contact
 Feel free to reach out if you have any questions or suggestions:
